@@ -6,9 +6,6 @@ import se.lexicon.model.TodoItemTask;
 
 import java.time.LocalDate;
 
-/**
- * Hello world!
- */
 public class App {
     public static void main(String[] args) {
         Person person1 = new Person(1, "Kaarel", "Visnapuu", "k.v@gmail.com");
