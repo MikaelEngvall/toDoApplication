@@ -41,7 +41,7 @@ public class AppUser {
                 ", role=" + role +
                 '}';
     }
-// Getters and Setters
+    // Getters and Setters
 
     public String getUsername() {
         return username;

@@ -1,26 +1,29 @@
 package se.lexicon;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DisplayName;
 import se.lexicon.model.Person;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class PersonTest {
     @Test
-    public void testCreatePerson() {
-        Person person = new Person(1, "John", "Doe", "john@example.com");
-        assertEquals(1, person.getId());
-        assertEquals("John", person.getFirstName());
-        assertEquals("Doe", person.getLastName());
-        assertEquals("john@example.com", person.getEmail());
+    @DisplayName("Testing the overridden equals() method")
+    public void testEquals() {
+        Person person1 = new Person(1,"Mikael", "Engvall", "m.e@gmail.com");
+        Person person2 = new Person(1,"Mikael", "Engvall", "m.e@gmail.com");
+        assertTrue(person1.equals(person2));
+    }
+    @Test
+    @DisplayName("Testing the overridden hashCode() method")
+    public void testHashCode() {
+        Person person1 = new Person(1,"Mikael", "Engvall", "m.e@gmail.com");
+        Person person2 = new Person(1,"Mikael", "Engvall", "m.e@gmail.com");
+        assertEquals(person1.hashCode(), person2.hashCode());
     }
 
-    @Test
-    public void testSetFirstName() {
-        Person person = new Person(1, "John", "Doe", "john@example.com");
-        person.setFirstName("Alice");
-        assertEquals("Alice", person.getFirstName());
-    }
+
     @Test
     public void testGetSummary() {
         Person person = new Person(1, "John", "Doe", "john@example.com");
