@@ -1,8 +1,8 @@
-package se.lexicon.model;
+package se.lexicon.TodoIT_assignment.model;
 
 import java.time.LocalDate;
 
-import static se.lexicon.util.ValidatorsUtil.validateStringNotEmpty;
+import static se.lexicon.TodoIT_assignment.util.ValidatorsUtil.validateStringNotEmpty;
 
 public class TodoItem {
     private int id;

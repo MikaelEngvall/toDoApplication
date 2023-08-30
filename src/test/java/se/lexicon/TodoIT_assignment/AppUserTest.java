@@ -1,8 +1,8 @@
-package se.lexicon;
+package se.lexicon.TodoIT_assignment;
 
 import org.junit.Test;
-import se.lexicon.model.AppRole;
-import se.lexicon.model.AppUser;
+import se.lexicon.TodoIT_assignment.model.AppRole;
+import se.lexicon.TodoIT_assignment.model.AppUser;
 
 import static org.junit.Assert.assertEquals;
 

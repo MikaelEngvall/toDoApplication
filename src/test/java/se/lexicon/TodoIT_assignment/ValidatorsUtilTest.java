@@ -1,7 +1,7 @@
-package se.lexicon;
+package se.lexicon.TodoIT_assignment;
 
 import org.junit.Test;
-import se.lexicon.util.ValidatorsUtil;
+import se.lexicon.TodoIT_assignment.util.ValidatorsUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;

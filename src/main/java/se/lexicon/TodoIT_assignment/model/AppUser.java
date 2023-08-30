@@ -1,8 +1,8 @@
-package se.lexicon.model;
+package se.lexicon.TodoIT_assignment.model;
+
+import se.lexicon.TodoIT_assignment.util.ValidatorsUtil;
 
 import java.util.Objects;
-
-import static se.lexicon.util.ValidatorsUtil.validateStringNotEmpty;
 
 public class AppUser {
     private String username;
@@ -15,8 +15,8 @@ public class AppUser {
     // Constructors
 
     public AppUser(String username, String password, AppRole role) {
-        validateStringNotEmpty(username);
-        validateStringNotEmpty(password);
+        ValidatorsUtil.validateStringNotEmpty(username);
+        ValidatorsUtil.validateStringNotEmpty(password);
         this.username = username;
 //        this.password = password;
         this.role = role;

@@ -1,11 +1,11 @@
-package se.lexicon;
+package se.lexicon.TodoIT_assignment;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple TodoITAssignmentApplication.
  */
 public class AppTest 
     extends TestCase

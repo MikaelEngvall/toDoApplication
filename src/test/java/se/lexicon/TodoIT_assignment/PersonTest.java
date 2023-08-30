@@ -1,8 +1,8 @@
-package se.lexicon;
+package se.lexicon.TodoIT_assignment;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
-import se.lexicon.model.Person;
+import se.lexicon.TodoIT_assignment.model.Person;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

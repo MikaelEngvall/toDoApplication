@@ -1,9 +1,9 @@
-package se.lexicon;
+package se.lexicon.TodoIT_assignment;
 
 import org.junit.Test;
-import se.lexicon.model.Person;
-import se.lexicon.model.TodoItem;
-import se.lexicon.model.TodoItemTask;
+import se.lexicon.TodoIT_assignment.model.TodoItem;
+import se.lexicon.TodoIT_assignment.model.TodoItemTask;
+import se.lexicon.TodoIT_assignment.model.Person;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package se.lexicon.model;
+package se.lexicon.TodoIT_assignment.model;
 
 public class TodoItemTask {
     private int id;

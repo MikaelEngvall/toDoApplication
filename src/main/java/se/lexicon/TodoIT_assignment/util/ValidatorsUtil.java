@@ -1,4 +1,4 @@
-package se.lexicon.util;
+package se.lexicon.TodoIT_assignment.util;
 
 
 public class ValidatorsUtil {

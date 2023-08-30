@@ -1,8 +1,8 @@
-package se.lexicon.model;
+package se.lexicon.TodoIT_assignment.model;
+
+import se.lexicon.TodoIT_assignment.util.ValidatorsUtil;
 
 import java.util.Objects;
-
-import static se.lexicon.util.ValidatorsUtil.validateStringNotEmpty;
 
 public class Person {
 
@@ -21,9 +21,9 @@ public class Person {
 
 
     public Person(int id, String firstName, String lastName, String email, AppUser credentials) {
-        validateStringNotEmpty(firstName);
-        validateStringNotEmpty(lastName);
-        validateStringNotEmpty(email);
+        ValidatorsUtil.validateStringNotEmpty(firstName);
+        ValidatorsUtil.validateStringNotEmpty(lastName);
+        ValidatorsUtil.validateStringNotEmpty(email);
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -90,7 +90,7 @@ public class Person {
     }
 
     public void setFirstName(String firstName) {
-        validateStringNotEmpty(firstName);
+        ValidatorsUtil.validateStringNotEmpty(firstName);
         this.firstName = firstName;
     }
 
@@ -99,7 +99,7 @@ public class Person {
     }
 
     public void setLastName(String lastName) {
-        validateStringNotEmpty(lastName);
+        ValidatorsUtil.validateStringNotEmpty(lastName);
         this.lastName = lastName;
     }
 
@@ -108,7 +108,7 @@ public class Person {
     }
 
     public void setEmail(String email) {
-        validateStringNotEmpty(email);
+        ValidatorsUtil.validateStringNotEmpty(email);
         this.email = email;
     }
 }
